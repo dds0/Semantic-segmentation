@@ -14,7 +14,7 @@ def normilize_img(x):
     x *= 2.
     return x
 
-def unet(pretrained=False, base=4):
+def unet(isTrained= False, classes=4):
 
     if n_classes == 1:
         loss = 'binary_crossentropy'
