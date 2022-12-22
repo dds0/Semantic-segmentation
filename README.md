@@ -2,3 +2,4 @@
 
 
 Use u-net model.
+hand.h5 - saved weights.
