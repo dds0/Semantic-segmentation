@@ -15,9 +15,6 @@ print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 if config.isHand:
     img_path = [os.path.join('dataset', name) for name in utils.sorted_dir('dataset')]
     ann_path = [os.path.join('dataset_masks', name) for name in utils.sorted_dir('dataset_masks')]
-else:
-    img_path = [os.path.join('img', name) for name in utils.sorted_dir('img')]
-    ann_path = [os.path.join('ann', name) for name in utils.sorted_dir('ann')]
 
 img_test = img_path[0:len(img_path)]
 ann_test = ann_path[0:len(ann_path)]
