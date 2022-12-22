@@ -22,7 +22,7 @@ ann_test = ann_path[0:len(ann_path)]
 if config.isHand:
     model = model.unet(True, config.n_classes)
 else:
-    model = model.unet(False, 4)
+    model = model.unet(False, 1)
 
 tg = data_generator.DataGenerator(img_paths=img_test, ann_paths=ann_test,
                    batch_size=12, isAugment=True, isShuffle=True, isBinary=config.isBinary)
