@@ -82,7 +82,7 @@ def unet(isTrained= False, classes=4):
                   loss=loss,
                   metrics=[jacard_coeff])
 
-    if pretrained == True:
+    if isTrained == True:
         model.load_weights('hand.h5')
 
     model.summary()
